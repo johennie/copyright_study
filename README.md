@@ -10,6 +10,7 @@ machine learning models to determine their predictive performance. <br>
 
 Notebook: https://github.com/johennie/copyright_study/blob/aead29c11eec44e49d0feda0691ddcd9e3e155f1/notebooks/capstone_copyright_case_study.ipynb <br>
 Data: https://github.com/johennie/copyright_study/blob/aead29c11eec44e49d0feda0691ddcd9e3e155f1/data/fairuse_copyright_dataset.csv <br>
+Script to build dataset: https://github.com/johennie/copyright_study/blob/7858b583524cc639fcf9ec05f57ac3d71a09debc/notebooks/build_dataset.ipynb <br>
 
 # 1. Business understanding 
 The U.S. Copyright Office defines copyright [https://www.copyright.gov/what-is-copyright/]  as a "type of intellectual property that protects original works of authorship as soon as an author fixes the work in a tangible form of expression. In copyright law, there are a lot of different types of works, including paintings, photographs, illustrations, musical compositions, sound recordings, computer programs, books, poems, blog posts, movies, architectural works, plays," etc.. In addition, copyright infrigement involves the unauthorized use or reproduction, distribution, public display, creation or derivative of copyrighted works. <br>
