@@ -31,42 +31,50 @@ The dataset we are working with is collected from Harvard Case Law data https://
 case_type_encoded - the type of case, one of: 'copyright' (1) or 'fair use' (0) <br><br>
 year - the year in which the decision or opinion was published or the case was disposed of <br><br>
 court - federal or state court. Examples: 'Supreme Court of the United States', 'United States District Court for the District of Massachusetts', etc... <br><br>
-jurisdiction - the appellate jurisdiction within the  federal court system  of the United States, one of: '2nd Circuit', '9th Circuit', 'Federal Circuit', '11th Circuit', '3rd Circuit', '5th Circuit', '6th Circuit', '4th Circuit', '10th Circuit', '8th Circuit', 'U.S. Supreme Court', '7th Circuit', 'District of Columbia Circuit', '1st Circuit', '-8' (where -8 is unknown)<br><br>
+jurisdiction - the appellate jurisdiction within the  federal court system of the United States, one of: '2nd Circuit', '9th Circuit', 'Federal Circuit', '11th Circuit', '3rd Circuit', '5th Circuit', '6th Circuit', '4th Circuit', '10th Circuit', '8th Circuit', 'U.S. Supreme Court', '7th Circuit', 'District of Columbia Circuit', '1st Circuit', '-8' (where -8 is unknown)<br><br>
 tags - a list of categories associated with the case. Examples: education, film, parody etc... <br><br>
 text - the opinion or case summary associated with the case<br><br>
 outcome - this is the target, the outcome of the case based on the case's disposition, one of: 'copyright infringement found', 'copyright infringement not found', 'pending', 'fair use not found', 'fair use found' <br><br>
 
 ## Exploratory Data Analysis (EDA)
-<br><br>
-The dataset is balanced between fair use and copyright case types
+<br>
+In this section we aim to understand the data, features and data types as well as potential patterns and relationships. 
+We look into percentages of case types, outcomes, and distribution of cases across jurisdictions, courts and tags.
+<br>
+The dataset is balanced between fair use and copyright case types as shown in the following pie plot.
 <br>
 
 ![case_type.png](images%2Fcase_type.png)
 <br><br>
-The target values are well balanced among 'copyright infringement found', 'copyright infringement not found', 'pending', 'fair use not found', and 'fair use found'
+This plot shows the percentage of each outcome type of 'copyright infringement found', 'copyright infringement not found', 'pending', 'fair use not found', and 'fair use found'. Be aware that in this dataset copyright case types may have an outcome of eithe 'copyright infringement found', 'copyright infringement not found', or 'pending.' Similarly, fair use case types may have an outcome of either 'pending', 'fair use not found', or 'fair use found'.
 <br>
 
 ![outcome.png](images%2Foutcome.png)
 <br><br>
-Most of the cases in this dataset are in SCOTUS, then the 2nd Circuit followed by the 9th Circuit
+This count plot shows the distribution of cases across the different appellate jurisdictions within the federal court system. It demonstrates that most of the cases in this dataset are in SCOTUS, then the 2nd Circuit followed by the 9th Circuit.
 <br>
 
 ![jurisdiction.png](images%2Fjurisdiction.png)
 <br><br>
-Most of the cases by jurisdiction in this dataset are in copyright infringement found cases
+Most of the cases by jurisdiction in this dataset are in 'copyright infringement found' cases.
 <br>
 
 ![case outcome by jurisdiction.png](images%2Fcase%20outcome%20by%20jurisdiction.png)
 <br><br>
-research is the most common tag, followed by music
+Bellow we are able to observe that 'research', 'music', and 'film' are the most common tags/categories in this dataset.
 <br>
 
 ![common_tags.png](images%2Fcommon_tags.png)
 <br><br>
-cases had been on an increase trend since 1975 but have been on a decline lately
+Looking at the Number of cases per year shows that cases had been on an increase trend since 1975 but lately they have been on a decline.
 <br>
 
 ![cases_per_year.png](images%2Fcases_per_year.png)
+<br><br>
+Finally, we look at a scatter plot of court and jurisdiction with outcome as a hue to identify that SCOTUS has a larger number of pending cases. In addition, most courts have cases unassigned to a jurisdiction.
+<br>
+
+![court_jurisdiction_with_outcome.png](images%2Fcourt_jurisdiction_with_outcome.png)
 <br><br>
 ## Data Preprocessing
 Several preprocessing steps are applied to ensure the data is ready for modeling:<br>
