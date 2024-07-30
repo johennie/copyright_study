@@ -54,7 +54,7 @@ indicates that it generalizes well to unseen data and effectively balances preci
 Hyperparameter tuning further improved model performance, highlighting the importance of optimizing model parameters. The trade-off between computational cost (fit time) and model performance should be considered when deploying these models in practice.
 <br>
 
-### Recommendation
+## Recommendations
 Gradient Boosting and SVM models performed better for tasks involving the textual data,
 as they demonstrated superior performance and performing hyperparameter tuning using techniques like Grid Search allows us
 to achieve the best possible model performance.
@@ -140,8 +140,8 @@ into a format suitable for machine learning models. <br>
 4.	Text Processing: The TfidfVectorizer is used to convert the text data in 
 the text column into numerical features, limited to the top 1000 features for simplicity.<br>
 5.	Tags Processing: Process the tags column which contains comma-separated strings<br>
-<br>
 <br><br>
+
 # 3. Model Evaluation and Analysis 
 
 ## Methodology
@@ -161,6 +161,7 @@ the best-performing algorithm for predicting legal case outcomes based on the gi
 4. Train and test each of the models without case opinions. 
 5. Train and test each of the models with case opinions.
 <br>
+
 ## Fit times and metrics
 
 ![results.png](images%2Fresults.png)
