@@ -205,6 +205,10 @@ The GridSearch improved model performance, particularly for Gradient Boosting an
 For instance, tuning the SVM model resulted in a test accuracy increase from 0.562 (default) to 0.617 
 and the F1 score rose from 0.560 to 0.612.
 <br><br>
+
+## Next steps and recommendations
 For future work, exploring additional text preprocessing techniques to further enhance model 
-performance would probably improve results. 
+performance would probably improve results. Some examples of additional text processing include 
+stemming, lemmatization, and the use of advanced embeddings like BERT to capture semantic meaning.
+Also, fine-tuning hyperparameters for the GradientBoosting model could yield even better results.
 Additionally, expanding the dataset with more cases could provide more robust and generalized predictions.
