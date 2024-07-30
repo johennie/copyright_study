@@ -32,15 +32,17 @@ marginal improvements.
 and F1 scores. 
 5. SVM <br>Showed improved performance with text data, achieving high test accuracy and F1 scores. 
 <br>
+
 ### Hyperparameter Tuning
 1. Grid Search significantly improved the performance of Logistic Regression, KNN, and Gradient Boosting models. 
 2. Optimized models, especially with text data, showed better test accuracy and F1 scores compared to default parameters. 
+<br>
 
 ### Impact of Text Data
 1. Including textual case opinions generally improved model performance, particularly for Logistic Regression, SVM, and Gradient Boosting models. 
 2. Proper text preprocessing and feature engineering are crucial for leveraging textual data effectively.
+<br>
 
-### Conclusion
 This project demonstrated that incorporating textual data from case opinions can enhance the predictive performance 
 of machine learning models for legal case outcomes. However, the benefits vary across different models and depend 
 heavily on appropriate text preprocessing and feature engineering. Gradient Boosting and SVM models showed the most 
@@ -50,9 +52,9 @@ feature hyperparameter-tuned version (GridSearch with RandomForestClassifier_wo_
 suggesting that hyperparameter tuning effectively managed overfitting. Which
 indicates that it generalizes well to unseen data and effectively balances precision and recall, making it the most suitable choice among the evaluated models for this specific feature set
 Hyperparameter tuning further improved model performance, highlighting the importance of optimizing model parameters. The trade-off between computational cost (fit time) and model performance should be considered when deploying these models in practice.
+<br>
 
-
-### Recomendation
+### Recommendation
 Gradient Boosting and SVM models performed better for tasks involving the textual data,
 as they demonstrated superior performance and performing hyperparameter tuning using techniques like Grid Search allows us
 to achieve the best possible model performance.
@@ -139,7 +141,8 @@ into a format suitable for machine learning models. <br>
 the text column into numerical features, limited to the top 1000 features for simplicity.<br>
 5.	Tags Processing: Process the tags column which contains comma-separated strings<br>
 <br>
-# 3. Model Evaluation and Analysis
+<br><br>
+# 3. Model Evaluation and Analysis 
 
 ## Methodology
 1. Identify the models to fit and test with and use GridSearch for hyperparameter tuning with the aim to identify 
@@ -184,6 +187,9 @@ performance while balancing precision and recall.<br>
 
 ![times_and_f1scores.png](images%2Ftimes_and_f1scores.png)
 <br>
+
+# 4. Conclusion 
+
 As we discussed in the findings section above, including case opinions (text feature) generally 
 improved the test accuracy and F1 score across most models. The Gradient Boosting model with case opinions achieved the 
 highest test accuracy (0.649) and F1 score (0.643) suggesting that this model is well-suited for the dataset,
